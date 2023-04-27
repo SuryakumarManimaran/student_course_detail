@@ -73,21 +73,7 @@ class Course extends CI_Controller {
 
     $this->load->view('coursetable',$data);
 }
-	public function search() {
 
-    $query = $this->input->get('query');
-    $data = $this->Coursemodel->searchnum($query);
-    echo json_encode($data);
-}
-
-	public function deletefun(){
-
-	$course_id = $this->input->post('course_id');
-
-	$this->Coursemodel->deletesecond($course_id);
-	$this->Coursemodel->deleteform($course_id);
-	echo "Data deleted succesfully"; // Send a response back to the AJAX call
-}
 
 
 	
