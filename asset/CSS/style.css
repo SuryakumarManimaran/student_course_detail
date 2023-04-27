@@ -1,0 +1,30 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	padding: 50px 100px 50px 100px;
+}
+
+.container{
+	padding: 
+}
+
+.checkhere{
+	display: flex;
+	justify-content: center;
+}
+
+#checkhere{
+	height: 20px;
+	width: 20px;
+}
+
+.error{
+	color: red;
+
+}
+
+.btn{
+	width: 200px;
+}
