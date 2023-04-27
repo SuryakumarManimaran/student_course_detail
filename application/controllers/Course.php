@@ -57,22 +57,7 @@ class Course extends CI_Controller {
 
 	}
 
-	public function showtable(){
 
-	$checkroll = $this->input->post('regNo');
-    $data['data'] = $this->Coursemodel->getTable($checkroll);
-
-    // check if any data is returned by the model
-    if(empty($studentdata['data'])) {
-        $data['regNo'] = $checkroll; // send the reg_no to the view
-    }
-
-    // echo"<pre>";print_r($checkroll);exit();
-    $data['code'] = $this->Coursemodel->getCoursecode($checkroll);
-    
-
-    $this->load->view('coursetable',$data);
-}
 
 
 
