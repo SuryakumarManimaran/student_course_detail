@@ -111,11 +111,6 @@ class Course extends CI_Controller {
 		
 }
 
-	public function showCourse(){
-		$course_code = $this->input->post('course_code');
-		$sendCourse = $this->Coursemodel->courseCode($course_code);
-		echo json_encode($sendCourse);
-	}
 
 
 }
