@@ -90,26 +90,7 @@ class Course extends CI_Controller {
 }
 
 
-	public function updatefun(){
-
-		$data = array(
-		'course_code'=>$this->input->post('course_code'),
-		'course'=>$this->input->post('course'),
-	);
-		$datas = array(
-			'staff_name' => $this->input->post('staff'),
-			'course_code' => $this->input->post('course_code'),
-	);
-		$datass = array(
-			'course_code' => $this->input->post('course_code'),
-			'reg_no' => $this->input->post('regno'),
-		);
-
-		$this->Coursemodel->updateform($data);
-		$this->Coursemodel->updatestaff($datas);
-		$this->Coursemodel->updateCS($datass);
-		
-}
+	
 
 
 
